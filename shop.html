@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+  <!-- Meta Options -->
+
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+  <!-- Title -->
+
+  <title>Sudecap - Nuestros productos</title>
+
+
+
+  <!-- Bootstrap -->
+
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+  <!-- Favicon -->
+
+  <link rel="icon" type="image/x-icon" href="assets/images/heading-icon.png">
+
+  <!-- Owl Carousal -->
+
+  <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+
+  <!-- Animate -->
+
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.min.html">
+
+
+  <!-- Animate on scroll -->
+
+  <link rel="stylesheet" type="text/css" href="assets/css/aos.css">
+
+
+  <!-- Fancy Box -->
+
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+
+  <!-- Nice Select -->
+
+  <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css">
+
+  <!-- Stylesheet -->
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+  <!-- Colors -->
+
+  <link rel="stylesheet" type="text/css" href="assets/css/color.css">
+
+
+  <!-- Responsive -->
+
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+  <!-- Font Awesome 5 -->
+
+  <script src="assets/js/27a041baf1.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- Loader Start -->
+  <div class="preloader">
+    <figure>
+      <img src="assets/images/icon-sudecap.png" style="height: 50px;" alt="Image">
+    </figure>
+  </div>
+  <!-- Loader End -->
+
+  <!-- Header Style One Start -->
+  <header class="header-style-one"></header>
+  <!-- Header Style One End -->
+
+  <!-- Banner Style One Start -->
+  <section class="banner-style-one">
+    <div class="parallax" style="background-image: url(assets/images/pattren-3.png);"></div>
+    <div class="container">
+      <div class="row">
+        <div class="banner-details">
+          <h2>Lista de productos</h2>
+          <p>Ofrecemos una gran variedad de productos</p>
+        </div>
+      </div>
+    </div>
+    <div class="breadcrums">
+      <div class="container">
+        <div class="row">
+          <ul>
+            <li>
+              <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <p>Inicio</p>
+              </a>
+            </li>
+            <li class="current">
+              <p>Tienda</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Banner Style One End -->
+
+  <!-- Shop Style One Start -->
+  <section class="gap shop-style-one addition">
+    <div class="container">
+      <div class="row content_products ">
+        <!-- test exacmple -->
+        <div class="item_single col-12 col-sm-6 col-md-4"  target="_blank">
+          <div class="a">
+            <div class="product_content">
+              <figure>
+                <!-- src='https://sudecap.com/assets/products/BIOPOLYMER_VIS.png' -->
+                <img
+                  src=${SERVICE.IMAGE}
+                  alt="Product">
+              </figure>
+              <div>
+                <span class="name_product">${SERVICE.NAME}</span>
+              </div>
+              <a class="button_write_us" target="_blank" href="https://api.whatsapp.com/send?phone=573103695000&text=Hola%20estoy%20interesado%20en%20eL%20producto%20${SERVICE.NAME}">
+                  Cotizar
+              </a>
+              <a class="view_file" target="_blank" href="${SERVICE.FILE}">
+                  Hoja de seguridad
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <style>
+    .name_product{
+      font-size: 1.4rem;
+      margin: 10px;
+    }
+    .view_file, .button_write_us{
+      margin-bottom: 5px;
+      text-align:center;
+      
+      padding:15px;
+      width: 100%;
+      font-weight: 400;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+    }
+    .view_file{
+      background: #0061CE;
+    }
+    .button_write_us{
+      background: #f6f6f6;
+      color: #0061CE;
+      margin-bottom:15px;
+    }
+    .button_write_us:hover{
+      background: #f6f6f6;
+    }
+
+    .view_file:hover{
+      color:white;
+      opacity: .9;
+    }
+    .product_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    .product_content>figure {
+      width: 100%;
+      /* display: flex; */
+    }
+
+    .product_content>figure>img {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border-radius: 20px;
+    }
+
+    .product_content>div>span {
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      height: 50px;
+    }
+    .product_content{
+      transition: all 0.3s ease;
+    }
+    .product_content:hover{
+      cursor: pointer;
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    }
+    .description_product{
+      font-size: .7rem;
+      margin: 25px 0px;
+      color: gray;
+      text-align: start !important;
+    }
+  </style>
+  <footer class="footer-style-one">
+  </footer>
+
+  <button id="scrollTop" class="scrollTopStick">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="./assets/services.js"></script>
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <script src="assets/js/jquery.nice-select.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
+
+</html>
