@@ -123,19 +123,19 @@
                         <p>¿Tienes preguntas o quieres charlar? Complete nuestro formulario de contacto y lo pondremos
                             en contacto
                             con las personas adecuadas.</p>
-                        <form>
+                        <form action="https://formspree.io/f/mgvzzopp" method="POST">
                             <div class="row g-0">
-                                <textarea placeholder="Pregunta / Mensaje?"></textarea>
+                                <textarea name="mensaje" placeholder="Pregunta / Mensaje?"></textarea>
                             </div>
                             <div class="row g-0">
-                                <input type="text" class="form-control" id="exampleInputText1"
+                                <input type="text" name="nombre" class="form-control" id="exampleInputText1"
                                     placeholder="Nombre completo">
                             </div>
                             <div class="row g-0">
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo">
+                                <input type="email" name="correo" class="form-control" id="exampleInputEmail1" placeholder="Correo">
                             </div>
                             <div class="row g-0">
-                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Asunto">
+                                <input type="text" name="asunto" class="form-control" id="exampleInputPassword1" placeholder="Asunto">
                             </div>
 
                             <button type="submit" class="theme-btn">Enviar mensaje <i
